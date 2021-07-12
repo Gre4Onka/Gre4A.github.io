@@ -2,10 +2,33 @@
 <head>
 <title>Главная</title>
 </head>
-<body bgcolor="#4a4a4a">
-<form>
-   <center><p><input type="search" name="q" placeholder="Поиск по сайту"> 
-   <input type="submit" value="Найти"></p>
-  </form></center>
+<body bgcolor="#4a4a4a" class="abobus">
+	<style type="text/css">
+		.abobus{
+			color: white;
+
+			text-align: center;						
+			padding-top: 100px;
+
+		}
+        .logo{
+            font-size: 130;
+            padding-top: 100px;
+        }
+
+        .poisk{
+        	transform: scale(2,2);
+        	padding-top: 150px;
+        } 
+
+	</style>
+
+	<b><center><font class="logo">GOOGLE V2</font></center></b>
+
+	<form action="" method="get" class="poisk">
+  <input name="s" placeholder="Искать здесь..." type="search">
+  <button type="submit">Поиск</button>
+</form>
+
 </body>
 </html>
