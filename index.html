@@ -1,47 +1,76 @@
 <html>
 <head>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 <title>Главная</title>
 </head>
-<body bgcolor="#4a4a4a" class="abobus">
+<body bgcolor="#333" class="abobus">
 
 	<style type="text/css">
 		.abobus{
-			color: white;
-
-			text-align: center;						
-			padding-top: 100px;
+			color: white;								
 
 		}
         .logo{
-            font-size: 100;
-            padding-top: 100px;
-
+            font-size: 130;
+            margin-top: 100px;
+            margin-left: 10;
+            display: block;	
+            font-family: 'Shadows Into Light', cursive;
         }
 
-        .poisk{
-        	transform: scale(3,3);
-        	padding-top: 110px;
+       form.poisk input[type=text] {
+  			padding: 10px;
+  			font-size: 17px;
+  			border: 1px solid grey;
+  			float: left;
+  			width: 40%;
+  			background: #f1f1f1;
+  			margin-left: 590;
+  			margin-top: 300;
+		}	
+  		
+        	
+        	
         } 
 
-        .beta{
+        .news:hover{
+        	color: grey;
+            
+        } 
+
+        .news{
+        	margin-top: 400px;
+        	margin-left: auto;
+        	margin-right: auto;
+        	display: block;
+        	text-align: center;
         	font-size: 30;
-        	padding-top: 70px;
+        	text-decoration: none;
+        	color: white;
         }
+
+        .beta{
+        	font-size: 40;
+            margin-top: 130;        
+            display: block;	
+        }
+
+
 
 	</style>
 
 	<b><center><font class="logo">GOOGLE V2</font></center></b>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-<form action="http://www.google.com/search" method="get" class="poisk">
-    <input type="text" name="q"/>
-    <input type="submit" value="Поиск" />
+<form class="poisk" action="http://www.google.com/search" method="get">
+  <input type="text" placeholder="Введите запрос..." name="q">
 </form>
 
-
-
-
+<a href="News.html" class="news">Что нового?</a>
+<center><font class="beta"><b>Beta 1.1</b></font></center>
 
 </body>
 </html>
